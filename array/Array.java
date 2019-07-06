@@ -1,7 +1,7 @@
 package com.example.datastructure.datastructure.array.sync;
 
 /**
- * @program: 动态数组
+ * @program: Arrya
  * @description: 封装自定义的动态数组
  * @author: cy
  **/
