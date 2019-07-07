@@ -1,8 +1,8 @@
 package com.example.datastructure.datastructure.array.sync;
 
 /**
- * @program: Arrya
- * @description: 封装自定义的动态数组
+ * @program: Array
+ * @description: 封装自定义的动态数组. github : /Documents/doc/utils/array/Array.java
  * @author: cy
  **/
 
@@ -51,7 +51,7 @@ public class Array<E> {
      * 判断数组中是否有元素.
      * @return
      */
-    public boolean isEnpty(){
+    public boolean isEmpty(){
         return size == 0;
     }
 
@@ -101,10 +101,22 @@ public class Array<E> {
      * @return
      */
     public E get(int index){
+        if (isEmpty()) {
+            return null;
+        }
         if (index < 0 || index >= size) {
             throw new IllegalArgumentException("method [getElementAtIndex] failed. Index is illegal .");
         }
         return data[index];
+    }
+
+
+    public E getLast(){
+        return get(size - 1);
+    }
+
+    public E getFirst(){
+        return get(0);
     }
 
 
@@ -218,6 +230,7 @@ public class Array<E> {
         data = newData;
         newData = null;
     }
+
 
 
 
