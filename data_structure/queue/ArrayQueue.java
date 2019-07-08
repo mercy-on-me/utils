@@ -1,10 +1,12 @@
-package com.example.datastructure.datastructure.queue;
+package com.example.datastructure.datastructure.queue.arrayqueue;
 
 import com.example.datastructure.datastructure.array.sync.Array;
 
 /**
- * @program: demo
- * @description: 基于动态数组的 Queue. 需要引入动态数组 Array
+ * @program: utils
+ * @description: 基于动态数组的数组队列 Queue. 需要引入动态数组 Array
+ *  数组队列的问题 : 出队的时候, 每出队一个元素(从队首, 也就是最左边移除一个元素,就需要将后边的元素都向前移动一位),
+ *                  如果有 100 万个元素,每出队一个元素, 就需要移动将近 100 万次, 所以需要升级为 [ 循环队列 ]
  * @author: cy
  **/
 

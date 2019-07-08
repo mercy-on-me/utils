@@ -1,7 +1,7 @@
-package com.example.datastructure.datastructure.queue;
+package com.example.datastructure.datastructure.queue.loop;
 
 /**
- * @program: demo
+ * @program: utils
  * @description: 队列接口
  * @author: cy
  **/
